@@ -1,0 +1,18 @@
+.hero {
+  position: relative;
+  height: 70vh;
+  background-color: white; 
+  overflow: hidden;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 3rem;
+  font-family: 'Outfit', sans-serif;
+}

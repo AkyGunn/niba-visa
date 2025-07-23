@@ -1,0 +1,24 @@
+.title-text {
+    font-family: 'Outfit', sans-serif;
+    margin: 20px 0;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.size-s {
+    font-size: 1.5rem;
+}
+
+.size-m {
+    font-size: 2rem;
+}
+
+.size-l {
+    font-size: 2.5rem;
+}

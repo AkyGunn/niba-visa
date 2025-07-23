@@ -1,0 +1,43 @@
+.services-container {
+  display: flex;
+  padding: 20px;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+}
+
+.services-description {
+    width: 80%;
+    margin: 20px;
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+    overflow-y: auto;
+    max-height: 650px;
+}
+
+
+.services-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    padding: 10px;  
+    background-color: #3560fb48;
+    border-radius: 50px;
+    margin: 20px 0;
+    cursor: pointer;
+    color: #1c43cd;
+}
+
+.services-list li.active {
+    background-color:  #7187d594;
+    opacity: 90%;
+    border: 2px solid #3560fb;
+}
