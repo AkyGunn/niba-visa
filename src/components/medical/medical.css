@@ -1,0 +1,23 @@
+.department-inputs {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+  height: 50px;
+}
+
+.department-inputs select {
+    font-family: 'Outfit', sans-serif;
+    padding: 0 10px;
+}
+
+.selected-description {
+    font-family: 'Outfit', sans-serif;
+    margin: 20px 0;
+    text-align: left;
+    overflow-y: auto;
+    max-height: 650px;
+}
+
+.medical-container {
+    padding: 0 100px;    
+}
