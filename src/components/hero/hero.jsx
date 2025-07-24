@@ -18,7 +18,7 @@ const Hero = () => {
    useEffect(() => {
     gsap.to(textRef.current, {
       
-      text: 'Nehir Çok Güzel',
+      text: 'Almanya’da Mesleki Geleceğini Birlikte İnşa Edelim.',
       duration: 1,
       ease: 'none',
     });
