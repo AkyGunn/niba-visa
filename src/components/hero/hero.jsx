@@ -19,7 +19,7 @@ const Hero = () => {
     gsap.to(textRef.current, {
       
       text: 'Almanya’da Mesleki Geleceğini Birlikte İnşa Edelim.',
-      duration: 1,
+      duration: 2,
       ease: 'none',
     });
   }, []);
@@ -27,32 +27,33 @@ const Hero = () => {
   return (
     <div className="hero">
       <Particles
-        init={particlesInit}
-        options={{
-            preset: 'links',
-            fullScreen: { enable: false },
-            background: { color: 'transparent' },
-            particles: {
-            links: {
-                color: '#979797', // ← çizgi rengi burası!
-                distance: 120,
-            },
-             color: {
-                value: '#979797', // ← nokta rengi
-           },
-            },
-        }}
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            width: '100%',
-            height: '100%',
-            zIndex: 0,
-        }}
-    />
+  init={particlesInit}
+  options={{
+    preset: 'links',
+    fullScreen: { enable: false },
+    background: { color: '#3e3c44' },
+    particles: {
+      links: {
+        color: ['#ff5e5e', '#ffaa00', '#34c759', '#0a84ff', '#af52de'], // çizgi renkleri
+        distance: 120,
+      },
+      color: {
+        value: '#fff', // nokta renkleri
+      },
+    },
+  }}
+  style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    width: '100%',
+    height: '100%',
+    zIndex: 0,
+  }}
+/>
+
 
 
       <div className="hero-text">

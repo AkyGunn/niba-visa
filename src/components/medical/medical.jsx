@@ -98,53 +98,129 @@ const Medical = () => {
 
   const SelectedComponent = componentMap[activeValue];
 
+  const colorPalette = [
+    '#be746e',
+    '#e1ca73',
+    '#72d0b5',
+    '#53d5fb',
+  ]
+
   return (
     <div className="medical-container">
       <Title text="Sağlık Personelleri" size="l"/>
       <div className="department-inputs">
         {/* Select kutuları */}
-        <select value={selected.lisans} onChange={(e) => handleChange("lisans", e.target.value)}>
-          <option value="">Lisans Mezunları</option>
-          <option value="hemsirelik">Hemşirelik</option>
-          <option value="biyoloji">Biyoloji</option>
-          <option value="cocuk_gelisimi">Çocuk Gelişimi</option>
-          <option value="diyetisyenlik">Diyetisyenlik</option>
-          <option value="fizyoterapi_lisans">Fizyoterapi</option>
-          <option value="ebelik">Ebelik</option>
-          <option value="eczacilik">Eczacılık</option>
-          <option value="ergoterapi">Ergoterapi</option>
-          <option value="veterinerlik">Veterinerlik</option>
-        </select>
+        <select
+  value={selected.lisans}
+  onChange={(e) => handleChange("lisans", e.target.value)}
+  style={{ backgroundColor: colorPalette[0], color: "white" }}
+>
+  {[
+    { value: "", label: "Lisans Mezunları" },
+    { value: "hemsirelik", label: "Hemşirelik" },
+    { value: "biyoloji", label: "Biyoloji" },
+    { value: "cocuk_gelisimi", label: "Çocuk Gelişimi" },
+    { value: "diyetisyenlik", label: "Diyetisyenlik" },
+    { value: "fizyoterapi_lisans", label: "Fizyoterapi" },
+    { value: "ebelik", label: "Ebelik" },
+    { value: "eczacilik", label: "Eczacılık" },
+    { value: "ergoterapi", label: "Ergoterapi" },
+    { value: "veterinerlik", label: "Veterinerlik" },
+  ].map((option, index) => (
+    <option
+      key={index}
+      value={option.value}
+      style={{
+        backgroundColor: colorPalette[index % colorPalette.length],
+        color: "white",
+      }}
+    >
+      {option.label}
+    </option>
+  ))}
+</select>
 
-        <select value={selected.onlisans} onChange={(e) => handleChange("onlisans", e.target.value)}>
-          <option value="">Ön Lisans Mezunları</option>
-          <option value="ameliyathane">Ameliyathane Teknikleri</option>
-          <option value="anestezi">Anestezi</option>
-          <option value="dis_sagligi">Ağız ve Diş Sağlığı</option>
-          <option value="cocuk_gelisimi_onlisans">Çocuk Gelişimi</option>
-          <option value="eczacilik_teknikerligi">Eczacılık Teknikerliği</option>
-          <option value="nukleer_tip">Nükleer Tıp</option>
-          <option value="paramedik">Paramedik</option>
-          <option value="fizyoterapi_onlisans">Fizyoterapi</option>
-          <option value="radyoloji">Radyoloji</option>
-          <option value="radyoterapi">Radyoterapi</option>
-          <option value="lab">Tıbbi Laboratuvar</option>
-          <option value="sekreterlik">Tıbbi Sekreterlik ve Dökümantasyon</option>
-          <option value="yasli_bakimi">Yaşlı Bakımı</option>
-        </select>
+<select
+  value={selected.onlisans}
+  onChange={(e) => handleChange("onlisans", e.target.value)}
+  style={{ backgroundColor: colorPalette[1], color: "white" }}
+>
+  {[
+    { value: "", label: "Ön Lisans Mezunları" },
+    { value: "ameliyathane", label: "Ameliyathane Teknikleri" },
+    { value: "anestezi", label: "Anestezi" },
+    { value: "dis_sagligi", label: "Ağız ve Diş Sağlığı" },
+    { value: "cocuk_gelisimi_onlisans", label: "Çocuk Gelişimi" },
+    { value: "eczacilik_teknikerligi", label: "Eczacılık Teknikerliği" },
+    { value: "nukleer_tip", label: "Nükleer Tıp" },
+    { value: "paramedik", label: "Paramedik" },
+    { value: "fizyoterapi_onlisans", label: "Fizyoterapi" },
+    { value: "radyoloji", label: "Radyoloji" },
+    { value: "radyoterapi", label: "Radyoterapi" },
+    { value: "lab", label: "Tıbbi Laboratuvar" },
+    { value: "sekreterlik", label: "Tıbbi Sekreterlik ve Dökümantasyon" },
+    { value: "yasli_bakimi", label: "Yaşlı Bakımı" },
+  ].map((option, index) => (
+    <option
+      key={index}
+      value={option.value}
+      style={{
+        backgroundColor: colorPalette[index % colorPalette.length],
+        color: "white",
+      }}
+    >
+      {option.label}
+    </option>
+  ))}
+</select>
 
-        <select value={selected.lise} onChange={(e) => handleChange("lise", e.target.value)}>
-          <option value="">Lise Mezunları</option>
-          <option value="att">Acil Tıp Teknisyenliği</option>
-          <option value="hemsire_2016">Hemşirelik (2016 ve öncesi)</option>
-          <option value="hemsire_yardimcisi">Hemşire Yardımcılığı</option>
-          <option value="hasta_yasli_bakimi">Hasta ve Yaşlı Bakımı</option>
-        </select>
+<select
+  value={selected.lise}
+  onChange={(e) => handleChange("lise", e.target.value)}
+  style={{ backgroundColor: colorPalette[2], color: "white" }}
+>
+  {[
+    { value: "", label: "Lise Mezunları" },
+    { value: "att", label: "Acil Tıp Teknisyenliği" },
+    { value: "hemsire_2016", label: "Hemşirelik (2016 ve öncesi)" },
+    { value: "hemsire_yardimcisi", label: "Hemşire Yardımcılığı" },
+    { value: "hasta_yasli_bakimi", label: "Hasta ve Yaşlı Bakımı" },
+  ].map((option, index) => (
+    <option
+      key={index}
+      value={option.value}
+      style={{
+        backgroundColor: colorPalette[index % colorPalette.length],
+        color: "white",
+      }}
+    >
+      {option.label}
+    </option>
+  ))}
+</select>
 
-        <select value={selected.doktor} onChange={(e) => handleChange("doktor", e.target.value)}>
-          <option value="">Doktorlar</option>
-          <option value="uzman_doktorlar">Uzmanlığı Olan Tüm Doktorlar</option>
-        </select>
+<select
+  value={selected.doktor}
+  onChange={(e) => handleChange("doktor", e.target.value)}
+  style={{ backgroundColor: colorPalette[3], color: "white" }}
+>
+  {[
+    { value: "", label: "Doktorlar" },
+    { value: "uzman_doktorlar", label: "Uzmanlığı Olan Tüm Doktorlar" },
+  ].map((option, index) => (
+    <option
+      key={index}
+      value={option.value}
+      style={{
+        backgroundColor: colorPalette[index % colorPalette.length],
+        color: "white",
+      }}
+    >
+      {option.label}
+    </option>
+  ))}
+</select>
+
       </div>
 
       <div className="selected-description">

@@ -7,6 +7,7 @@ import Contact from './components/contact/contact.jsx';
 import Medical from './components/medical/medical.jsx';
 
 function App() {
+
   return (
     <div className="App">
        <Navbar/>

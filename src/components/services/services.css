@@ -33,11 +33,9 @@
     border-radius: 50px;
     margin: 20px 0;
     cursor: pointer;
-    color: #1c43cd;
+    color: #fff;
 }
 
 .services-list li.active {
-    background-color:  #7187d594;
-    opacity: 90%;
-    border: 2px solid #3560fb;
+    border: #fff 2px solid;
 }

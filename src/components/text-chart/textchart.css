@@ -1,5 +1,5 @@
 :root {
-    --chart-border-color: #eaeaea;
+    --chart-border-color: #3e3d43;
 }
 
 .text-chart {
@@ -9,13 +9,13 @@
     font-family: 'Outfit', sans-serif;
     width: 30%;
     height: max-content;
-    box-shadow: 0px 1px 15px var(--chart-border-color);
-    border: 1px solid var(--chart-border-color);
-    border-radius: 10px;
+    /*box-shadow: 0px 1px 15px var(--chart-border-color);*/
+    border-radius: 5px;
     padding: 30px;
     margin: 20px;
     text-align: left;
 }
+
 
 h2 {
     margin: auto;

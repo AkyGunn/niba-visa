@@ -1,3 +1,16 @@
 .aboutus-charts {
     display: flex;
 }
+
+.text-chart:nth-child(1) {
+    border:  #be746e 1px solid;
+}
+
+.text-chart:nth-child(2) {
+    border: #e1ca73 1px solid;
+}
+
+.text-chart:nth-child(3) {
+    border: #72d0b5 1px solid;
+}
+

@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className='contact-container'>
         <img src={whatsapp_logo} alt="" />
-        <p>Whatsapp</p>
+        <p style={{color: 'black'}}>Whatsapp</p>
     </div>
   )
 }

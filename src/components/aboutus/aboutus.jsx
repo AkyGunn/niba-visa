@@ -9,7 +9,7 @@ const Aboutus = () => {
         <Title text="Hakkımızda" align="center" size="l" />
         
         <div className="aboutus-charts">
-            <TextChart 
+            <TextChart
           header="Hakkımızda"
             text="Almanya’ya gitmek ve orada yeni bir hayat kurmak çoğu kişinin gözünde büyük ve zor bir süreç gibi görünebilir. Ancak biz, bu sürecin aslında çok daha kolay olduğunu biliyor ve bunu danışanlarımıza göstermek için çalışıyoruz. Ne yazık ki, birçok danışmanlık firması bu süreci zor ve karmaşık göstererek insanları kendilerine muhtaç hissettirmek istiyor. Bizim farkımız burada ortaya çıkıyor: Şeffaf, açık ve her aşamada kaliteli hizmet sunuyoruz. Deneyimli ekibimizle, dil kurslarından vize işlemlerine kadar her konuda kişiye özel çözümler sunuyor ve amacımız, müşterilerimizin Almanya’daki yeni hayatlarına güvenle adım atmalarını sağlamak. Bu sürecin sizin için mümkün olan en kolay şekilde tamamlanması bizim için esastır."
         />

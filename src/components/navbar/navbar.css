@@ -1,7 +1,7 @@
 nav {
   height: 80px; /* ya da istediğin bir değer */
-  background-color: white;
-  color: #333;
+  background-color: var(--background-color);
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +39,7 @@ nav {
   align-items: center;
   height: 100%;
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-family: 'Outfit', sans-serif;
   font-size: 1.2em;
 }
